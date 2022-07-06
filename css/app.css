@@ -21,3 +21,12 @@ aside{
     height: calc(100vh - 90px);
     background-color: brown;
 }
+
+.upgrade-bar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 90px;
+    width: calc(100vw - 230px);
+    background-color: black;
+}
