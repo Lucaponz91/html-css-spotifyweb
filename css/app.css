@@ -26,6 +26,11 @@ aside{
 }
 
 /* NAVBAR (SX) */
+@media screen and (min-width: 551px){
+    .navbar{
+        min-width: 230px;
+    }
+}
 
 .navbar{
     width: 230px;
@@ -36,7 +41,7 @@ aside{
     position: relative;
     display: flex;
     flex-direction: column;
-    overflow: auto;
+    /* overflow: auto; */
 }
 .navbar-top{
     color: white;
@@ -158,18 +163,74 @@ aside{
 /* MAIN CONTENT */
 .main-content{
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #141922;
+    color: white;
+    overflow-y: auto;
 }
-
+.main-content a{
+    color: #A3A3A3;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 0 12px 12px 12px;
+    position: relative;
+}
+.main-navbar{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+.song-menu{
+    padding: 25px;
+}
+.row{
+    display: flex;
+    flex-direction: column;
+}
+.row > h2{
+    margin-bottom: 10px;
+}
+.row h4{
+    color: #767676;
+    margin-bottom: 30px;
+}
+.recenti h2{
+    margin-bottom: 30px;
+}
+.song-wrapper{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+    row-gap: 10px;
+    column-gap: 15px;
+}
+.song-card{
+    flex-basis: calc(100% / 7);
+    display: flex;
+    flex-direction: column;
+}
+.card-image img{
+    width: 100%;
+}
+.card-description h3{
+    font-size: 1rem;
+}
+.card-description h4{
+    font-size: 0.75rem;
+    color: #5A5A5A;
+}
 /* UPGRADE BAR (TOP) */
 .upgrade-bar{
-    position: fixed;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    top: 0;
-    right: 0;
     height: 90px;
-    width: calc(100vw - 230px);
+    width: 100%;
     background-color: black;
     opacity: 0.4;
 }
@@ -190,7 +251,7 @@ aside{
 
 /* ASIDE (PLAYER) */
 aside > *{
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
     height: 100%;
     flex-basis: 230px;
 }
