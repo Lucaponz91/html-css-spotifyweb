@@ -239,7 +239,7 @@ aside > *{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
 }
 .center-buttons a{
     color: white;
@@ -259,10 +259,17 @@ aside > *{
     border-radius: 5px;
     width: 100%;
 }
+.current-playing{
+    height: 5px;
+    background-color: white;
+    width: 9.1%;
+    border-radius: inherit;
+}
 #playsong{
     border-radius: 50%;
     border: 2px solid white;
     padding: 4px;
+    padding-inline: 6px;
 }
 .right{
     display: flex;
