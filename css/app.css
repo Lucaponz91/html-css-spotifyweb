@@ -5,6 +5,9 @@
     font-family: 'Montserrat', sans-serif;
     /* border: 1px dashed black; */
 }
+a{
+    text-decoration: none;
+}
 ul{
     list-style: none;
 }
@@ -33,6 +36,7 @@ aside{
     position: relative;
     display: flex;
     flex-direction: column;
+    overflow: auto;
 }
 .navbar-top{
     color: white;
@@ -183,3 +187,48 @@ aside{
     border-radius: 25px;
     padding: 16px 40px;
 }
+
+/* ASIDE (PLAYER) */
+aside > *{
+    border: 1px dashed black;
+    height: 100%;
+    flex-basis: 230px;
+}
+.player{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #282828;
+
+}
+.left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #767676;
+}
+.album-cover{
+    width: 35px;
+    height: 35px;
+}
+.artist a{
+    color: white;
+}
+.song-title a{
+    color: #767676;
+}
+.song-interactions{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.song-interactions > *{
+    color: #767676;
+}
+
+.center{
+    height: 100%;
+    flex-grow: 1;
+}
+
+
