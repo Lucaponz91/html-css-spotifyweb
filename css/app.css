@@ -260,6 +260,19 @@ aside{
     font-size: 0.75rem;
     color: #5A5A5A;
 }
+
+/* MAIN CONTENT 1024PX */
+@media screen and (max-width: 1024px){
+    .song-card{
+        flex-basis: calc(100% / 4);
+    }
+}
+/* MAIN CONTENT 550PX */
+@media screen and (max-width: 550px){
+    .song-card{
+        flex-basis: calc(142% / 3);
+    }
+}
 /* UPGRADE BAR (TOP) */
 .upgrade-bar{
     display: flex;
