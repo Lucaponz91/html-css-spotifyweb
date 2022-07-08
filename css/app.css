@@ -154,6 +154,7 @@ aside{
         justify-content: space-between;
         background-color: #000;
         text-align: center;
+        overflow: inherit;
     }
     .navbar-top h1{
         display: none;
