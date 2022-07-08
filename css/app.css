@@ -402,10 +402,17 @@ aside > *{
     border-radius: 5px;
     width: 115px;
 }
+.slider-volume:hover .dot-playing{
+    opacity: 1;
+}
 .current-volume{
     width: 30%;
     height: 100%;
+    position: relative;
     background-color: #e4e4e4;
     border-radius: inherit;
+}
+.slider-volume:hover .current-volume{
+    background-color: greenyellow;
 }
 
