@@ -41,7 +41,7 @@ aside{
     position: relative;
     display: flex;
     flex-direction: column;
-    /* overflow: auto; */
+    overflow: auto;
 }
 .navbar-top{
     color: white;
@@ -61,9 +61,28 @@ aside{
 .navbar-menu img{
     width: 20px;
 }
+.selected-link::before{
+    content: '';
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    width: 2px;
+    background-color: greenyellow;
+
+}
 .navbar-menu li{
     margin-bottom: 12px;
+    position: relative;
+    filter: opacity(0.7);
 }
+.navbar-menu li:hover{
+    cursor: pointer;
+    color: white;
+    filter: opacity(1);
+}
+    
+
 .navbar-menu p {
     display: inline-block;
     position: relative;
@@ -78,6 +97,10 @@ aside{
     color: #A3A3A3;
     margin-top: 15px;
     margin-bottom: 26px;
+}
+.navbar-playlist li:hover{
+    cursor: pointer;
+    color: white;
 }
 .navbar-playlist i{
     font-size: 37px;
@@ -183,6 +206,19 @@ aside{
     align-items: center;
     justify-content: center;
     margin-bottom: 35px;
+    position: relative;
+}
+.main-navbar a:hover{
+    color: white;
+}
+.navbar-active::after{
+    content: '';
+    position: absolute;
+    right: 30%;
+    bottom: 38%;
+    left: 30%;
+    height: 2px;
+    background-color: greenyellow;
 }
 .song-menu{
     padding: 25px;
@@ -324,13 +360,32 @@ aside > *{
     height: 5px;
     background-color: white;
     width: 9.1%;
+    position: relative;
     border-radius: inherit;
+}
+.center-slider-playing:hover .current-playing{
+    background-color: greenyellow;
+}
+.center-slider-playing:hover .dot-playing{
+    opacity: 1;
+}
+.dot-playing{
+    position: absolute;
+    opacity: 0;
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    background-color: white;
+    right: -0.125rem;
+    top: 50%;
+    transform: translateY(-50%);
 }
 #playsong{
     border-radius: 50%;
     border: 2px solid white;
     padding: 4px;
     padding-inline: 6px;
+    font-size: 1.2rem;
 }
 .right{
     display: flex;
