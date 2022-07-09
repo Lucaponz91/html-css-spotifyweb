@@ -251,8 +251,26 @@ aside{
     display: flex;
     flex-direction: column;
 }
+.card-image{
+    position: relative;
+}
 .card-image img{
     width: 100%;
+}
+.svg-play{
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(171deg) brightness(112%) contrast(101%);
+    position: absolute;
+    top: 21%;
+    left: 0%;
+    height: 50%;
+    width: 100%;
+    display: none;
+}
+.card-image:hover .img-song{
+    filter: opacity(0.3);
+}
+.card-image:hover .svg-play{
+    display: block;
 }
 .card-description h3{
     font-size: 1rem;
