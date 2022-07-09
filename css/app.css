@@ -302,6 +302,9 @@ aside{
     background-color: black;
     opacity: 0.4;
 }
+.paywall:hover{
+    transform: scale(1.125);
+}
 /* UPGRADE BAR (SMALL) */
 @media screen and (max-width: 550px){
     .upgrade-bar{
@@ -346,6 +349,10 @@ aside > *{
 .song-title a{
     color: #767676;
 }
+.song-title-select:hover{
+    color: white;
+    text-decoration: underline;
+}
 .song-interactions{
     display: flex;
     flex-direction: row;
@@ -353,6 +360,9 @@ aside > *{
 }
 .song-interactions > *{
     color: #767676;
+}
+.song-button:hover {
+    color: white;
 }
 
 .center{
@@ -387,6 +397,7 @@ aside > *{
     background-color: #5A5A5A;
     border-radius: 5px;
     width: 100%;
+    margin-inline: 20px;
 }
 .current-playing{
     height: 5px;
@@ -418,6 +429,9 @@ aside > *{
     padding: 4px;
     padding-inline: 6px;
     font-size: 1.2rem;
+}
+#playsong:hover{
+    transform: scale(1.125);
 }
 .right{
     display: flex;
